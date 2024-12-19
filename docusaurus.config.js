@@ -114,11 +114,11 @@ const config = {
             items: [
               {
                 label: 'Opción A',
-                to: '/tercer-menu/opcion-a'
+                to: '/reportes/resumen'
               },
               {
                 label: 'Opción B',
-                to: '/tercer-menu/opcion-b'
+                to: '/reportes/etiqueta'
               }
             ]
           }
