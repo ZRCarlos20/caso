@@ -39,7 +39,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          // sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: false,
           routeBasePath: '/'
         },
         // blog: false,
@@ -66,18 +66,64 @@ const config = {
           src: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Geraldine_A._Ferraro_Signature.svg',
         },
         items: [
-          // {
-          //   type: 'docSidebar',
-          //   sidebarId: 'tutorialSidebar',
-          //   position: 'left',
-          //   label: 'Tutorial',
-          // },
-          // {to: '/blog', label: 'Blog', position: 'left'},
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          {
+            type: 'dropdown',
+            label: 'Configuracion inicial',
+            position: 'left',
+            items: [        {
+              label: 'Datos Generales',
+              to: '/Configuracion-inicial/datos-generales'  
+              },
+              {
+                label: 'Perfil de Usuario',
+                to: '/Configuracion-inicial/Perfil-Usuario'   
+              },
+              {
+                label: 'Agentes',
+                to: '/Configuracion-inicial/agentes'   
+              },
+              {
+                label: 'Equipos',
+                to: '/Configuracion-inicial/Equipos'   
+              },
+              {
+                label: 'Plantillas de mensajes',
+                to: '/Configuracion-inicial/Plantillas-de-mensajes'   
+              }
+            ]
+          },
+          {
+            type: 'dropdown',
+            label: 'Configuracion Adicional',
+            position: 'left',
+            items: [
+              {
+                label: 'Asignar Conversaciones',
+                to: '/configuracion-adicional/Asignar-conversaciones'
+              },
+              {
+                label: 'Asignar Prioridad',
+                to: '/configuracion-adicional/Asignar-prioridad'
+              }
+            ]
+          },
+          {
+            type: 'dropdown',
+            label: 'Tercer Menú',
+            position: 'left',
+            items: [
+              {
+                label: 'Opción A',
+                to: '/tercer-menu/opcion-a'
+              },
+              {
+                label: 'Opción B',
+                to: '/tercer-menu/opcion-b'
+              }
+            ]
+          }
+      
+  
         ],
       },
       footer: {
