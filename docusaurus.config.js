@@ -14,7 +14,7 @@ const config = {
   url: 'https://ZRCarlos20.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/caso1/',
+  baseUrl: '/caso/',
 
   // GitHub pages deployment config.
   organizationName: 'ZRCarlos20',
